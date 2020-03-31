@@ -20519,6 +20519,17 @@
     "CSharpLanguageVersion": 800
   },
   "RootNamespace": "Auth",
-  "Documents": [],
+  "Documents": [
+    {
+      "FilePath": "c:\\Users\\Korisnik\\Desktop\\Ucenje\\dotnetPractice\\Auth\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Korisnik\\Desktop\\Ucenje\\dotnetPractice\\Auth\\Views\\Home\\Secret.cshtml",
+      "TargetPath": "Views\\Home\\Secret.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
   "SerializationFormat": "0.2"
 }
