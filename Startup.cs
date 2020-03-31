@@ -15,6 +15,13 @@ namespace Auth
        
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddAuthentication("CookieAuth")
+                .AddCookie("CookieAuth",config =>
+            {
+                config.Cookie.Name ="Samk.Cookie";
+                config.LoginPath = "/Home/Authenticate";
+            });
+
             services.AddControllersWithViews();
         }
 
@@ -24,8 +31,11 @@ namespace Auth
             {
                 app.UseDeveloperExceptionPage();
             }
+            
 
             app.UseRouting();
+
+            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
