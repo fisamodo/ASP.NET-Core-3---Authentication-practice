@@ -35,7 +35,14 @@ namespace Auth
 
             app.UseRouting();
 
+            //who are you?
+            app.UseAuthentication();
+
+            //are you allowed?
             app.UseAuthorization();
+
+            
+            
 
             app.UseEndpoints(endpoints =>
             {

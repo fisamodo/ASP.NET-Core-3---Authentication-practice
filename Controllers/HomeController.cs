@@ -39,6 +39,7 @@ namespace Auth.Controllers
             var userPrincipal = new ClaimsPrincipal(new[] {IdentityClaim, IdentityLicenseClaims});
 
             HttpContext.SignInAsync(userPrincipal);
+            
 
             return RedirectToAction("Index");
         }
